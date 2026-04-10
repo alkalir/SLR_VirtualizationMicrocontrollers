@@ -19,7 +19,7 @@ STAGE 3 consists of a manual screening in which each paper is evaluated by readi
 
 ## Two-reviewer process
 
-Each paper is independently evaluated by **two reviewers** (Leonardo and Giacomo). Each reviewer assigns one of the following labels:
+Each paper is independently evaluated by **two reviewers**. Each reviewer assigns one of the following labels:
 
 | Label | Meaning |
 |-------|---------|
