@@ -215,28 +215,28 @@ The snowballing process produced 838 raw candidates (≈ 693 unique titles after
 
 | Code | Description |
 |------|-------------|
-| **IN1** | Proposes or evaluates a virtualization solution |
-| **IN2** | Targets microcontroller-based or resource-constrained platforms |
-| **IN3** | Addresses mixed-criticality workloads |
-| **IN4** | Published between January 2015 and July 2025 |
-| **IN5** | Written in English |
-| **IN6** | Primary study (journal article, conference paper, or workshop paper) |
-| **IN7** | Full text available |
+| **IN1** | Research articles published between 2015 and July 2025 |
+| **IN2** |  Research articles published in peer-reviewed journals and conference proceedings |
+| **IN3** | Research articles presenting primary studies (i.e., original empirical research reporting first-hand data |
+| **IN4** |  Research articles with full text available (i.e., not limited to title and abstract) |
+| **IN5** | Research articles written in English |
+| **IN6** | Research articles focusing on the implementation of virtualization in microcontroller-based mixed-criticality systems|
+| **IN7** |  Research articles focusing on the management of virtualization in microcontroller-based mixed-criticality systems |
 
 ## Exclusion Factors
 
 | Code | Description |
 |------|-------------|
-| **EX1** | Published before 2015 or after July 2025 |
-| **EX2** | Not written in English |
-| **EX3** | Not a journal article, conference paper, or workshop paper (e.g., editorial, poster, thesis, technical report) |
-| **EX4** | Duplicate (within the same digital library) |
-| **EX5** | Duplicate (cross-database) |
+| **EX1** |Research articles published before 2015 |
+| **EX2** | Research articles of the following types: secondary studies (e.g., surveys, reviews, systematic literature reviews, systematizations of knowledge), tutorials, editorials, dissertations, technical reports, posters, and non-peer-reviewed articles.|
+| **EX3** | Not written in English |
+| **EX4** | Research articles whose full text is neither available nor obtainable after a request to the authors. |
+| **EX5** | Duplicate research articles|
 | **EX6** | Not related to computer science or engineering |
-| **EX7** | Secondary or tertiary study (survey, review, systematic review, meta-analysis) |
-| **EX8** | Does not address virtualization on embedded/constrained platforms |
-| **EX9** | Focuses on high-end processors (e.g., Cortex-A, x86) or application-class/cloud virtualization |
-| **EX10** | Does not address mixed-criticality aspects |
+| **EX7** | Research articles that do not address virtualization in the context of microcontroller-based mixed-criticality systems |
+| **EX8** | Research articles not focusing on virtualization|
+| **EX9** | Research articles not focusing on microcontroller-based systems. |
+| **EX10** | Research articles not focusing on mixed-criticality systems. |
 
 ## Data Extraction
 
@@ -268,7 +268,7 @@ These quality indicators are reflected in the extracted data and are used in the
 
 ## Data Synthesis
 
-The extracted data were analysed and summarised through **descriptive analysis** (frequency analysis) and **taxonomy-based classification**. For each research question, the answers recorded in the extraction form were aggregated and classified according to the taxonomy of virtualization dimensions adopted in the SLR. The results of the synthesis are reported in the manuscript as tables, charts and narrative discussion addressing each research question (RQ1–RQ5).
+The extracted data were analysed and summarised through **descriptive analysis** and **taxonomy-based classification**. For each research question, the answers recorded in the extraction form were aggregated and classified according to the taxonomy of virtualization dimensions adopted in the SLR. The results of the synthesis are reported in the manuscript as tables, charts and narrative discussion addressing each research question (RQ1–RQ5).
 
 ## Research Team Member Roles
 
