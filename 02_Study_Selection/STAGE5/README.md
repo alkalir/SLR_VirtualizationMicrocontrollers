@@ -104,16 +104,16 @@ The 10 red papers are excluded for the following reasons recorded by the reviewe
 
 The **8 papers included in STAGE 5.3** are the new primary studies added by the snowballing process. Together with the 11 primary studies from STAGE 4, they form the **final set of 19 primary studies** analysed in the SLR.
 
-| # | Paper ID | Year | Authors | Title | DOI |
-|--:|---------:|------|---------|-------|-----|
-| 1 | 638 | 2018 | Sundar Rajan A.K. et al. | Hypervisor for consolidating real-time automotive control units: Its procedure, implications and hidden pitfalls | — |
-| 2 | 644 | 2023 | Z. Jiang et al. | Towards hard real-time and energy-efficient virtualization for manycore embedded systems | [10.1109/TC.2022.3187849](https://doi.org/10.1109/TC.2022.3187849) |
-| 3 | 849 | 2025 | M. Seidler; A. Krause; P. Ulbrich | Wasm-IO: Enabling low-level device interaction in WebAssembly for industry automation | — |
-| 4 | 1101 | 2024 | M. Barletta; F. Boccola; M. Cinque; L. De Simone | Integrating Containers and Partitioning Hypervisors for Dependable Real-Time Industrial Clouds | — |
-| 5 | 1155 | 2019 | Z. Jiang; N. Audsley; P. Dong; N. Guan; et al. | MCS-IOV: Real-time I/O virtualization for mixed-criticality systems | — |
-| 6 | 1160 | 2019 | Z. Jiang; N. Audsley; P. Dong | BlueIO: A scalable real-time hardware I/O virtualization system for many-core embedded systems | — |
-| 7 | 1411 | 2015 | D. Reinhardt; M. Güntner; S. Obermeier | Virtualized Communication Controllers in Safety-Related Automotive Embedded Systems | — |
-| 8 | 1414 | 2017 | A. Kohn; K. Schmidt; J. Decker; M. Sebastian; A. Züpke; A. Herkersdorf | Timing Analysis for Hypervisor-Based I/O Virtualization in Safety-Related Automotive Systems | — |
+| # | Paper ID | Year | Authors | Title |
+|--:|---------:|------|---------|-------|
+| 1 | 638 | 2018 | Sundar Rajan A.K. et al. | Hypervisor for consolidating real-time automotive control units: Its procedure, implications and hidden pitfalls |
+| 2 | 644 | 2023 | Z. Jiang et al. | Towards hard real-time and energy-efficient virtualization for manycore embedded systems | 
+| 3 | 849 | 2025 | M. Seidler; A. Krause; P. Ulbrich | Wasm-IO: Enabling low-level device interaction in WebAssembly for industry automation | 
+| 4 | 1101 | 2024 | M. Barletta; F. Boccola; M. Cinque; L. De Simone | Integrating Containers and Partitioning Hypervisors for Dependable Real-Time Industrial Clouds |
+| 5 | 1155 | 2019 | Z. Jiang; N. Audsley; P. Dong; N. Guan; et al. | MCS-IOV: Real-time I/O virtualization for mixed-criticality systems |
+| 6 | 1160 | 2019 | Z. Jiang; N. Audsley; P. Dong | BlueIO: A scalable real-time hardware I/O virtualization system for many-core embedded systems |
+| 7 | 1411 | 2015 | D. Reinhardt; M. Güntner; S. Obermeier | Virtualized Communication Controllers in Safety-Related Automotive Embedded Systems | 
+| 8 | 1414 | 2017 | A. Kohn; K. Schmidt; J. Decker; M. Sebastian; A. Züpke; A. Herkersdorf | Timing Analysis for Hypervisor-Based I/O Virtualization in Safety-Related Automotive Systems |
 
 ## Color Legend
 
@@ -122,7 +122,7 @@ The same convention used in STAGE 2, 3, and 4 is applied to the decision columns
 | Color | Meaning | Action |
 |-------|---------|--------|
 | 🟢 **Green** | The paper passes the criteria of the current sub-step | Keep → next sub-step / included primary study |
-| 🟡 **Yellow** | Borderline — reviewers disagree or the decision is postponed | Keep → next sub-step (flagged) |
+| 🟡 **Yellow** | Borderline —  the decision is postponed | Keep → next sub-step |
 | 🔴 **Red** | The paper fails one or more exclusion criteria | Discard |
 
 ## Contents
