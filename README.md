@@ -283,7 +283,6 @@ The extracted data were analysed and summarised through **descriptive analysis**
 | **Study Quality Assessment** | Assessment of the quality of each included primary study | LF, GV, FC |
 | **Data Extraction** | Extraction of the 42 parameters from the 19 included primary studies | LF, GV, LP |
 | **Data Synthesis** | Aggregation, classification, and narrative synthesis of the extracted data | LF, GV, FC, LP, TDM |
-| **Review Supervision** | Overall review direction, methodology, and final validation | LP, TDM |
 
 ## References
 
