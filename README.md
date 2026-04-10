@@ -4,7 +4,7 @@
 
 This repository contains all the documentation and supporting materials related to the Systematic Literature Review (SLR) presented in the paper:
 
-> L. Fazzini, G. Valente, F. Caruso, L. Pomante, and T. Di Mascio. **"Virtualization for Microcontroller-based Mixed-Criticality Systems: A Systematic Literature Review."** *Manuscript submitted to ACM*, 2026.
+> **"Virtualization for Microcontroller-based Mixed-Criticality Systems: A Systematic Literature Review."**
 
 The SLR investigates how virtualization is implemented and managed in microcontroller-based mixed-criticality systems, covering the period 2015–2025. It follows the Kitchenham guidelines for systematic literature reviews in software engineering and identifies **19 primary studies** from an initial pool of **10,678 research articles** retrieved across five digital libraries.
 
@@ -62,7 +62,7 @@ The study selection followed a five-stage filtering procedure:
 | STAGE 1 | Automatic filtering in digital libraries | EX1, EX2, EX3, EX6 | 10,678 | 5,364 |
 | STAGE 2 | Semi-automatic filtering (consolidation, deduplication) | EX2, EX3, EX5, EX6, EX7 | 5,364 | 637 |
 | STAGE 3 | Title, abstract, and introduction screening | EX2–EX9 | 637 | 144 |
-| STAGE 4 | Full-text analysis | EX1–EX10 | 144 | 11 (+ 4 seeds) |
+| STAGE 4 | Full-text analysis | All criteria | 144 | 11 |
 | STAGE 5 | Forward and backward snowballing | All criteria | 838 candidates | 11 + 8 = **19** |
 
 ---
@@ -156,14 +156,6 @@ AND
 
 Review protocol for **Virtualization for Microcontroller-based Mixed-Criticality Systems**.
 
-## Team Information
-
-| Field | Value |
-|-------|-------|
-| **Project Lead** | LF |
-| **Research Team Members** | LF, GV, FC, LP, TDM |
-| **Date** | August 2025 – April 2026 |
-| **Institution** | Department of Information Engineering, Computer Science and Mathematics (DISIM), University of L'Aquila, Italy |
 
 ## Review Research Question
 
