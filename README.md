@@ -281,11 +281,9 @@ The extracted data were analysed and summarised through **descriptive analysis**
 | **STAGE 4** | Full-text analysis against EX1–EX10 (including EX10 keyword pre-screening) | LF, GV |
 | **STAGE 5** | Forward and backward snowballing + full-text analysis of candidates | LF, GV, LP |
 | **Study Quality Assessment** | Assessment of the quality of each included primary study | LF, GV, FC |
-| **Data Extraction** | Extraction of the 42 parameters from the 19 included primary studies | LF, GV |
+| **Data Extraction** | Extraction of the 42 parameters from the 19 included primary studies | LF, GV, LP |
 | **Data Synthesis** | Aggregation, classification, and narrative synthesis of the extracted data | LF, GV, FC, LP, TDM |
 | **Review Supervision** | Overall review direction, methodology, and final validation | LP, TDM |
-
-**Legend** — LF: Leonardo Fazzini; GV: Giacomo Valente; FC: Federica Caruso; LP: Luigi Pomante; TDM: Tania Di Mascio.
 
 ## References
 
