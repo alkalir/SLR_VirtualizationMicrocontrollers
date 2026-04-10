@@ -84,7 +84,7 @@ The same convention used in STAGE 2 and STAGE 3 is applied to the `Paper discuss
 
 | File | Description |
 |------|-------------|
-| `STAGE4_1_EX10_Check.xlsx` | Full-text availability and EX10 keyword pre-screening for the 143 papers entering STAGE 4 |
+| `STAGE4_1_EX10_Check.xlsx` | Full-text availability and EX10 keyword pre-screening for the 144 papers entering STAGE 4 |
 | `STAGE4_2_FullText_Analysis.xlsx` | Complete full-text analysis against EX1–EX10 for the 65 papers that survived STAGE 4.1, including reviewer decisions, final opinion, and the snowballing flag |
 
 ## Related Documents
