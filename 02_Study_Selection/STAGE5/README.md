@@ -28,7 +28,7 @@ As in STAGE 3 and STAGE 4, each sub-step is carried out by two reviewers (Leonar
 
 ## STAGE 5.1 — Snowballing Candidate Collection
 
-`STAGE5_1_Snowballing.xlsx` is organised as **one block per seed paper**: each block starts with the seed metadata (ID, year, authors, title, DOI) followed by the list of papers obtained from its forward + backward snowballing. For every candidate paper the two reviewers apply a title + abstract screening against all exclusion criteria (EX1, EX2, EX5, EX7, EX8, EX9) and mark the row with a decision (included/excluded + reason) and a colour.
+`STAGE5_1_Snowballing.xlsx` is organised as **one block per seed paper**: each block starts with the seed metadata (ID, year, authors, title, DOI) followed by the list of papers obtained from its forward + backward snowballing. For every candidate paper the two reviewers apply a title + abstract screening against the exclusion criteria EX1–EX9 (EX10 is applied afterwards on the full text, in STAGE 5.2) and mark the row with a decision (included/excluded + reason) and a colour.
 
 ### Per-seed candidate breakdown
 
@@ -74,7 +74,7 @@ A candidate can cite more than one code, and for 162 of the 816 excluded candida
 
 ## STAGE 5.2 — EX10 Keyword Pre-Screening
 
-`STAGE5_2_EX10.xlsx` applies the same EX10 keyword pre-screening used in STAGE 4.1 to the 22 papers coming out of STAGE 5.1:
+`STAGE5_2_EX10.xlsx` applies the same EX10 keyword pre-screening used in STAGE 4.1 (the paper is kept only if its full text contains at least one of `criticality`, `mixed-critical`, or `safety-critical`; the generic term `critical` alone is not sufficient) to the 22 papers coming out of STAGE 5.1:
 
 - `Paper available in full text` — whether the full text could be retrieved (if not, the paper is excluded for EX4).
 - `Paper discusses about MCS (EX10)` — green ✓ / red ⮾ decision on whether the paper addresses mixed-criticality aspects.

@@ -2,7 +2,7 @@
 
 **Input**: 637 articles (from STAGE 2)
 **Output**: 144 articles (input of STAGE 4)
-**Criteria applied**: EX2, EX3, EX4, EX5, EX8, EX9
+**Criteria applied**: EX2–EX9
 
 ## Description
 
@@ -14,6 +14,8 @@ STAGE 3 consists of a manual screening in which each paper is evaluated by readi
 - **EX3** (English): non-English articles.
 - **EX4** (full text): articles whose full text is neither available nor obtainable after a precise request to the authors.
 - **EX5** (duplicates): residual duplicates missed by the automatic deduplication in STAGE 2.
+- **EX6** (no CS): articles outside the computer science subject area that were not caught in STAGE 1/2.
+- **EX7** (out of the SLR topic): articles that do not address virtualization in the context of MCU-based mixed-criticality systems. This is the criterion most frequently reported in the `Final Opinion after discussion` column.
 - **EX8** (no virtualization): articles that do not focus on virtualization, in terms of implementation or management.
 - **EX9** (no microcontroller-based systems): articles that do not focus on microcontroller-based systems.
 
@@ -54,7 +56,7 @@ The same three-color convention introduced in STAGE 2 is used throughout `STAGE3
 |-------|-------|---------|------|
 | 🟢 **Green** (`#00B050`) | **INC** | The paper is clearly relevant and proceeds to the next stage. | Keep → STAGE 4 |
 | 🟡 **Yellow** (`#FFFF00`) | **MB** | The paper is borderline: it might be excluded for EX8 or EX9, but title/abstract/introduction are not conclusive. It is kept so the full text can be read in STAGE 4. | Keep → STAGE 4 (re-evaluation) |
-| 🔴 **Red** (`#FF0000`) | **EXC** | The paper is excluded at this stage based on one of the applied exclusion criteria (EX2, EX3, EX4, EX5, EX8, EX9). | Discard |
+| 🔴 **Red** (`#FF0000`) | **EXC** | The paper is excluded at this stage based on one of the applied exclusion criteria (EX2–EX9). | Discard |
 
 ## Results
 
@@ -83,5 +85,5 @@ The table below summarizes the number of papers assigned to each label by each r
 
 ## Next Step
 
-The **144 papers** kept at the end of STAGE 3 (green + yellow in the Final Opinion column) are the input of **STAGE 4**, where each paper is read in full and the full set of exclusion criteria (EX2–EX10) is applied.
+The **144 papers** kept at the end of STAGE 3 (green + yellow in the Final Opinion column) are the input of **STAGE 4**, where each paper is read in full and the full set of exclusion criteria (EX1–EX10) is applied.
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

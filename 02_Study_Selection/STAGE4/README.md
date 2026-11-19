@@ -21,8 +21,10 @@ The process is divided into two sub-steps, both performed by two reviewers (Leon
 For each paper the full text is retrieved and the reviewers check whether the document contains any reference to mixed-criticality-related terminology. The `STAGE4_1_EX10_Check.xlsx` file reports, for each paper:
 
 - `Paper available in full text` — whether the full text could be retrieved (if not, the paper is excluded for EX4).
-- `Mentions mixed-criticality key words in the full text` — the occurrences (Yes/No) of the keywords `criticality`, `mixed-critical`, `safety-critical`, and `critical`.
+- `Mentions mixed-criticality key words in the full text` — the occurrences (Yes/No) of the keywords `criticality`, `mixed-critical`, `safety-critical`, and `critical`. The generic term `critical` is recorded only for transparency: it is **not** sufficient by itself, since it also occurs in unrelated contexts (e.g., critical sections, critical paths).
 - `Paper discusses about mixed-criticality` — final decision of the screening (green ✓ / red ⮾).
+
+**EX10 keyword rule.** A paper is kept only if its full text contains at least one of `criticality`, `mixed-critical`, or `safety-critical`; a paper that mentions only the generic term `critical` (or none of the terms) is marked red (EX10). The reviewers then verify, while reading the full text in STAGE 4.2, that the solution targets the consolidation of software with different criticality or safety requirements on a shared platform.
 
 ### Results
 
