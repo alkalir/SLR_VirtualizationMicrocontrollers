@@ -207,7 +207,7 @@ Forward and backward snowballing, as recommended by Wohlin's guidelines, were pe
 - **Backward snowballing** — inspection of the reference lists of each seed paper, to identify relevant older papers cited by the seeds.
 - **Forward snowballing** — inspection of the papers citing each seed (via Google Scholar, Scopus, IEEE Xplore, Web of Science), to identify relevant newer papers that cite the seeds.
 
-The snowballing process produced 838 raw candidates (≈ 693 unique titles after deduplication), from which 8 additional primary studies were identified. Details are reported in `02_Study_Selection/STAGE5/README.md`.
+The snowballing process produced 838 raw candidates (670 unique titles after deduplication), from which 8 additional primary studies were identified. Details are reported in `02_Study_Selection/STAGE5/README.md`.
 
 ## Inclusion Factors
 

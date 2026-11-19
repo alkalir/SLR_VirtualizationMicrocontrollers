@@ -20,7 +20,7 @@ The resulting candidate papers are then filtered through a three-step process co
 
 | Sub-step | Activity | File | Input | Output |
 |----------|----------|------|------:|-------:|
-| STAGE 5.1 | Forward + backward snowballing collection and title/abstract screening | `STAGE5_1_Snowballing.xlsx` | 838 raw (≈ 693 unique after dedup) | 22 |
+| STAGE 5.1 | Forward + backward snowballing collection and title/abstract screening | `STAGE5_1_Snowballing.xlsx` | 838 raw (670 unique titles after dedup) | 22 |
 | STAGE 5.2 | EX10 keyword pre-screening on the full text | `STAGE5_2_EX10.xlsx` | 22 | 18 |
 | STAGE 5.3 | Full-text analysis against EX1–EX10 | `STAGE5_3_FullText.xlsx` | 18 | **8** |
 
@@ -51,20 +51,24 @@ As in STAGE 3 and STAGE 4, each sub-step is carried out by two reviewers (Leonar
 | 227 | 2021 | Kept for snowballing | Virtualizing an Automotive State-of-the-Art Microcontroller: Techniques and Its Evaluation | 39 |
 | **Total** | | | | **838** |
 
-The 838 raw candidates include a significant amount of overlap (the same paper is often referenced by — or cites — multiple seeds): approximately **693 unique titles** remain after deduplication.
+The 838 raw candidates include a significant amount of overlap (the same paper is often referenced by — or cites — multiple seeds): **670 unique titles** remain after deduplication.
 
 ### Filtering outcome of STAGE 5.1
 
 The title/abstract screening of STAGE 5.1 is the most selective step of snowballing, because snowballing candidates come from any research area (most backward/forward references are out of scope, pre-2013, duplicates of STAGE 1/2 papers, or already excluded in previous stages). The main exclusion reasons recorded by the reviewers are:
 
-| Exclusion Criterion | Meaning | Approx. papers |
+| Exclusion Criterion | Meaning | Candidates citing the code |
 |---------------------|---------|---------------:|
-| EX1 | Year out of range (pre-2013) | ~186 |
-| EX5 | Duplicate of a paper already considered in STAGE 1/2/3/4 | ~142 |
-| EX2 | Secondary studies, theses, surveys, editorials | ~129 |
-| EX9 | Virtualization not targeted at microcontrollers | ~46 |
-| EX7 | CS article out of the SLR topic | ~45 |
-| EX8 | No virtualization mechanism defined | ~9 |
+| EX1 | Year out of range (pre-2013) | 186 |
+| EX2 | Secondary studies, theses, surveys, editorials | 170 |
+| EX5 | Duplicate of a paper already considered in STAGE 1/2/3/4 | 155 |
+| EX9 | Virtualization not targeted at microcontrollers | 79 |
+| EX7 | CS article out of the SLR topic | 72 |
+| EX8 | No virtualization mechanism defined | 16 |
+| EX3 | Not written in English | 5 |
+| EX4 | Full text not available | 3 |
+
+A candidate can cite more than one code, and for 162 of the 816 excluded candidates the reason is recorded as free text without an EX code, so the column does not sum to 816. Overall, **816 of the 838 candidates are excluded and 22 survive**.
 
 **Output of STAGE 5.1** = **22 papers** that survive the title/abstract screening and proceed to STAGE 5.2.
 
