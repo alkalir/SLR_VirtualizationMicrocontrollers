@@ -55,8 +55,8 @@ The 54 red papers are excluded for the following reasons (a paper can be exclude
 
 | Exclusion Criterion | Meaning | Papers |
 |---------------------|---------|-------:|
-| EX8 | Does not address virtualization  | 30 |
-| EX9 | Virtualization not targets microcontrollers (e.g. MMU-based, cloud, application processors) | 16 |
+| EX8 | Does not address virtualization  | 31 |
+| EX9 | Virtualization not targets microcontrollers (e.g. MMU-based, cloud, application processors) | 15 |
 | EX2 | Secondary studies, tutorials, editorials | 4 |
 | EX7 | CS article out of the SLR topic | 3 |
 
