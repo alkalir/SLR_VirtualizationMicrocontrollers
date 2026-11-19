@@ -6,7 +6,7 @@
 
 ## Description
 
-STAGE 5 applies **forward and backward snowballing**, as recommended by Wohlin's guidelines, starting from the 15 seeds produced by STAGE 4:
+STAGE 5 applies **forward and backward snowballing** (performed in January 2026), as recommended by Wohlin's guidelines, starting from the 15 seeds produced by STAGE 4:
 
 - **11 primary studies** included by the full-text analysis of STAGE 4.2, and
 - **4 papers that were excluded but flagged "keep for snowballing"** in STAGE 4.2 (see `../STAGE4/README.md`). These four papers are not counted as primary studies, but their bibliographies and citation graphs are considered valuable enough to be used as snowballing seeds.
@@ -55,11 +55,11 @@ The 838 raw candidates include a significant amount of overlap (the same paper i
 
 ### Filtering outcome of STAGE 5.1
 
-The title/abstract screening of STAGE 5.1 is the most selective step of snowballing, because snowballing candidates come from any research area (most backward/forward references are out of scope, pre-2013, duplicates of STAGE 1/2 papers, or already excluded in previous stages). The main exclusion reasons recorded by the reviewers are:
+The title/abstract screening of STAGE 5.1 is the most selective step of snowballing, because snowballing candidates come from any research area (most backward/forward references are out of scope, published before 2015, duplicates of STAGE 1/2 papers, or already excluded in previous stages). The main exclusion reasons recorded by the reviewers are:
 
 | Exclusion Criterion | Meaning | Candidates citing the code |
 |---------------------|---------|---------------:|
-| EX1 | Year out of range (pre-2013) | 186 |
+| EX1 | Year out of range (before 2015 or after January 2026) | 186 |
 | EX2 | Secondary studies, theses, surveys, editorials | 170 |
 | EX5 | Duplicate of a paper already considered in STAGE 1/2/3/4 | 155 |
 | EX9 | Virtualization not targeted at microcontrollers | 79 |

@@ -15,7 +15,7 @@ where `Virtualization_keywords` contains terms related to virtualization mechani
 
 After running each query, a set of **database-native filters** was applied to reduce the initial result set. These filters correspond to a subset of the global exclusion criteria (see `../README.md` for the full list):
 
-- **EX1 (years)** — published outside the window *2015 – end of July 2025*
+- **EX1 (years)** — published before 2015 or after January 2026. The upper bound is the date of the last search (the snowballing of January 2026); since the database search was run in 2025, only articles published after that search can fall beyond the database filter, and they are retrievable only through snowballing (STAGE 5)
 - **EX2 (article type)** — secondary studies, tutorials, editorials, newsletters (applied only when the database filter supports it — e.g., ScienceDirect)
 - **EX3 (English)** — non-English articles (applied only when the database filter supports it — e.g., Scopus)
 - **EX6 (no CS)** — articles outside the computer science subject area (applied only when the database filter supports it — e.g., Scopus, ScienceDirect)
