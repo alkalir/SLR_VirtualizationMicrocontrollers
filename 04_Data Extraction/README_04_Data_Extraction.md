@@ -1,12 +1,12 @@
 # 04_Data Extraction — Data Extraction Form and Extracted Data
 
 **Input**: 19 primary studies (the final set produced by STAGE 5)
-**Output**: Completed data-extraction table with **42 parameters × 19 papers**
+**Output**: Completed data-extraction table with **44 parameters × 19 papers**
 **Goal**: Answering the 5 research questions (RQ1–RQ5) of the SLR by systematically extracting the same set of information from each primary study.
 
 ## Description
 
-After the study selection process (STAGE 1 → STAGE 5) has produced the final set of **19 primary studies**, each of them is read in full and a fixed set of **42 data-extraction parameters** is filled in. The parameters are organised into **9 thematic groups**, each colour-coded in the spreadsheets and each addressing one or more of the Research Questions of the SLR:
+After the study selection process (STAGE 1 → STAGE 5) has produced the final set of **19 primary studies**, each of them is read in full and a fixed set of **44 data-extraction parameters** is filled in. The parameters are organised into **6 thematic groups**, each colour-coded in the spreadsheets and each addressing one or more of the Research Questions of the SLR:
 
 - **RQ1** — What are the characteristics of virtualization solutions proposed for microcontroller-based mixed-criticality systems?
 - **RQ2** — On which hardware platforms are these solutions implemented and evaluated?
@@ -20,25 +20,22 @@ The extraction protocol and the taxonomy used to classify the answers are docume
 
 | File | Description |
 |------|-------------|
-| `Data_Extraction_Form.xlsx` | Template defining all 42 extraction parameters, organised in 9 colour-coded groups with the associated Research Question. Each column is a parameter, each group is a coloured header spanning several columns. |
-| `Extracted_Data.xlsx` | Completed data-extraction table — **one row per primary study (19 rows), one column per parameter (42 columns)**. The first two header rows reproduce the colour-coded group structure of the form. |
+| `Data_Extraction_Form.xlsx` | Template defining all 44 extraction parameters, organised in 6 colour-coded groups with the associated Research Question (sheet `Data Extraction Form`), plus a sheet `Allowed Values` with the description and the admitted values of each parameter. Each column is a parameter, each group is a coloured header spanning several columns. |
+| `Extracted_Data.xlsx` | Completed data-extraction table — **one row per primary study (19 rows), one column per parameter (44 columns)**. The first three header rows reproduce the colour-coded group structure of the form. A second sheet, `Legend`, explains the abbreviations and symbols used in the cells (`n.r.` = not reported, `—` = not applicable/not evaluated, `●` = evaluated). |
 
 ## Extraction Parameters
 
-The 42 parameters are organised into 9 groups. The colour of each group matches the fill colour used in the header row of `Data_Extraction_Form.xlsx` and `Extracted_Data.xlsx`.
+The 44 parameters are organised into 6 groups, following Table *Data extraction parameters* of the paper. The colour of each group matches the fill colour used in the header row of `Data_Extraction_Form.xlsx` and `Extracted_Data.xlsx`.
 
 | # | Group | Colour | RQ | #Params | Parameters |
 |--:|-------|--------|----|--------:|------------|
-| 1 | **General Paper Information** | 🔵 Blue (`4472C4`) | RQ1 | 6 | Year; Author(s); Title; Database/Library; DOI; Venue |
-| 2 | **Virtualization Dimensions** | 🟢 Green (`70AD47`) | RQ1 | 6 | Virtualization layer; Deployment model; Interface model; Guest adaptation model; Virtualized resource; Partitioned resource |
-| 3 | **Know Your Hardware** | 🟠 Orange (`ED7D31`) | RQ2 | 7 | Instruction-set architecture; Processor model; Core configuration; Clock frequency; Privilege levels; Protection units; Additional HW mechanisms |
-| 4 | **Partitioning Memory** | 🟡 Yellow (`FFC000`) | RQ3 | 2 | HW-based isolation; SW-based isolation |
-| 5 | **Handling Traps and Interrupts** | 🟣 Purple (`7030A0`) | RQ3 | 3 | Interrupt handling; Privilege emulation; Exception handling |
-| 6 | **I/O Virtualization** | 🩵 Cyan (`00B0F0`) | RQ3 | 2 | Peripheral virtualization strategy; Support for shared peripherals |
-| 7 | **Start-Up Sequence and Partition Switch** | 🔴 Red (`FF0000`) | RQ4 | 4 | Boot order; Partition creation; Partition switch; Partition scheduling |
-| 8 | **Services to Partitions** | 🟩 Dark Green (`548235`) | RQ4 | 4 | Task handling inside partitions; Shared memory regions across partitions; Inter-partition communication; Service interface |
-| 9 | **Impact on Performance** | ⬜ Gray (`A5A5A5`) | RQ5 | 8 | Total execution time overhead; Context switch overhead; Hypercall latency; Interrupt handling latency; I/O access latency; HW resource overhead; Power overhead; Memory footprint |
-| | **Total** | | | **42** | |
+| 1 | **General Paper Information** | 🔵 Blue (`4472C4`) | — | 6 | Year; Author; Title; Database; DOI; Venue |
+| 2 | **Virtualization Dimensions** | 🟢 Green (`70AD47`) | RQ1 | 7 | Virtualized resource; Partitioned resource; VL origin; VL category; VL deployment; Guest interface approach; Guest privilege model |
+| 3 | **Targeted HW Platforms** | 🟠 Orange (`ED7D31`) | RQ2 | 8 | Instruction-set architecture; Processor model; Clock frequency; Processor configuration; Privilege levels; Memory HW protection mechanisms; Additional HW protection mechanisms; SW protection mechanisms |
+| 4 | **Virtualization Implementation** | 🟣 Purple (`7030A0`) | RQ3 | 6 | Tenant scheduling; Tenant privilege interface; Exception handling; Interrupt handling; I/O access method; I/O sharing |
+| 5 | **Virtualization Configuration and Management** | 🩵 Cyan (`00B0F0`) | RQ4 | 9 | Tenant creation; Tenant configuration; Boot sequence; Max tenants; Service API; Task scheduling; Tenant shared memory; Tenant communication; Protection management |
+| 6 | **Performance Impact** | ⬜ Gray (`7F7F7F`) | RQ5 | 8 | General execution time overhead; Context switch overhead; Hypercall overhead; Interrupt handling overhead; I/O access overhead; HW resource overhead; Power overhead; Memory footprint |
+| | **Total** | | | **44** | |
 
 ## Structure of the Spreadsheets
 
@@ -46,7 +43,7 @@ Both `Data_Extraction_Form.xlsx` and `Extracted_Data.xlsx` share the same horizo
 
 - **Row 1** — Group header: the cell is merged across the columns of the group and filled with the group colour (see table above). It contains the group name.
 - **Row 2** — Parameter header: one cell per parameter, with a light-blue fill, containing the short name of the parameter.
-- **Row 3** — RQ tag: the Research Question each parameter contributes to (RQ1–RQ5).
+- **Row 3** — RQ tag: the Research Question each parameter contributes to (RQ1–RQ5; `—` for the general information).
 - **Rows 4–22** in `Extracted_Data.xlsx` — the 19 primary studies, one row per paper, ordered chronologically by year (from 2015 to 2025).
 
 ## Primary Studies Covered

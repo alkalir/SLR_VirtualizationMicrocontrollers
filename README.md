@@ -85,19 +85,16 @@ This is decomposed into five specific research questions:
 
 ## Data Extraction Form
 
-The data extraction form comprises **42 parameters** organized into **9 colour-coded groups**:
+The data extraction form comprises **44 parameters** organized into **6 colour-coded groups**:
 
 | Group | Addressed RQ | Parameters |
 |-------|-------------|------------|
-| General Paper Information | RQ1 | Year, Author, Title, Database, DOI, Venue |
-| Virtualization Dimensions | RQ1 | Virtualization layer, Deployment model, Interface model, Guest adaptation model, Virtualized resource, Partitioned resource |
-| Know Your Hardware | RQ2 | ISA, Processor model, Core configuration, Clock frequency, Privilege levels, Protection units, Additional HW mechanisms |
-| Partitioning Memory | RQ3 | HW-based isolation, SW-based isolation |
-| Handling Traps and Interrupts | RQ3 | Interrupt handling, Privilege emulation, Exception handling |
-| I/O Virtualization | RQ3 | Peripheral virtualization strategy, Support for shared peripherals |
-| Start-Up Sequence and Partition Switch | RQ4 | Boot order, Partition creation, Partition switch, Partition scheduling |
-| Services to Partitions | RQ4 | Task handling, Shared memory, IPC, Service interface |
-| Impact on Performance | RQ5 | Total execution time, Context switch, Hypercall latency, Interrupt latency, I/O latency, HW resource, Power, Memory footprint |
+| General Paper Information | — | Year, Author, Title, Database, DOI, Venue |
+| Virtualization Dimensions | RQ1 | Virtualized resource, Partitioned resource, VL origin, VL category, VL deployment, Guest interface approach, Guest privilege model |
+| Targeted HW Platforms | RQ2 | Instruction-set architecture, Processor model, Clock frequency, Processor configuration, Privilege levels, Memory HW protection mechanisms, Additional HW protection mechanisms, SW protection mechanisms |
+| Virtualization Implementation | RQ3 | Tenant scheduling, Tenant privilege interface, Exception handling, Interrupt handling, I/O access method, I/O sharing |
+| Virtualization Configuration and Management | RQ4 | Tenant creation, Tenant configuration, Boot sequence, Max tenants, Service API, Task scheduling, Tenant shared memory, Tenant communication, Protection management |
+| Performance Impact | RQ5 | General execution time overhead, Context switch overhead, Hypercall overhead, Interrupt handling overhead, I/O access overhead, HW resource overhead, Power overhead, Memory footprint |
 
 ---
 
@@ -240,17 +237,14 @@ The snowballing process produced 838 raw candidates (≈ 693 unique titles after
 
 ## Data Extraction
 
-A dedicated data-extraction form was designed to systematically record the information needed to answer the five research questions. The form is implemented as an electronic spreadsheet (`04_Data Extraction/Data_Extraction_Form.xlsx`) and defines **42 parameters**, organised into **9 thematic colour-coded groups**:
+A dedicated data-extraction form was designed to systematically record the information needed to answer the five research questions. The form is implemented as an electronic spreadsheet (`04_Data Extraction/Data_Extraction_Form.xlsx`) and defines **44 parameters**, organised into **6 thematic colour-coded groups**:
 
-1. **General Paper Information** (RQ1) — 6 parameters: Year, Authors, Title, Database/Library, DOI, Venue.
-2. **Virtualization Dimensions** (RQ1) — 6 parameters: Virtualization layer, Deployment model, Interface model, Guest adaptation model, Virtualized resource, Partitioned resource.
-3. **Know Your Hardware** (RQ2) — 7 parameters: Instruction-set architecture, Processor model, Core configuration, Clock frequency, Privilege levels, Protection units, Additional HW mechanisms.
-4. **Partitioning Memory** (RQ3) — 2 parameters: HW-based isolation, SW-based isolation.
-5. **Handling Traps and Interrupts** (RQ3) — 3 parameters: Interrupt handling, Privilege emulation, Exception handling.
-6. **I/O Virtualization** (RQ3) — 2 parameters: Peripheral virtualization strategy, Support for shared peripherals.
-7. **Start-Up Sequence and Partition Switch** (RQ4) — 4 parameters: Boot order, Partition creation, Partition switch, Partition scheduling.
-8. **Services to Partitions** (RQ4) — 4 parameters: Task handling inside partitions, Shared memory regions, Inter-partition communication, Service interface.
-9. **Impact on Performance** (RQ5) — 8 parameters: Total execution time overhead, Context switch overhead, Hypercall latency, Interrupt handling latency, I/O access latency, HW resource overhead, Power overhead, Memory footprint.
+1. **General Paper Information** (—) — 6 parameters: Year, Author, Title, Database, DOI, Venue.
+2. **Virtualization Dimensions** (RQ1) — 7 parameters: Virtualized resource, Partitioned resource, VL origin, VL category, VL deployment, Guest interface approach, Guest privilege model.
+3. **Targeted HW Platforms** (RQ2) — 8 parameters: Instruction-set architecture, Processor model, Clock frequency, Processor configuration, Privilege levels, Memory HW protection mechanisms, Additional HW protection mechanisms, SW protection mechanisms.
+4. **Virtualization Implementation** (RQ3) — 6 parameters: Tenant scheduling, Tenant privilege interface, Exception handling, Interrupt handling, I/O access method, I/O sharing.
+5. **Virtualization Configuration and Management** (RQ4) — 9 parameters: Tenant creation, Tenant configuration, Boot sequence, Max tenants, Service API, Task scheduling, Tenant shared memory, Tenant communication, Protection management.
+6. **Performance Impact** (RQ5) — 8 parameters: General execution time overhead, Context switch overhead, Hypercall overhead, Interrupt handling overhead, I/O access overhead, HW resource overhead, Power overhead, Memory footprint.
 
 Data extraction was performed **independently by two reviewers** (Leonardo Fazzini and Giacomo Valente) reading the full text of each of the 19 primary studies. Disagreements were resolved through discussion and consensus with the other authors, obtaining a single completed row per paper in the final extraction table (`04_Data Extraction/Extracted_Data.xlsx`).
 
@@ -281,7 +275,7 @@ The extracted data were analysed and summarised through **descriptive analysis**
 | **STAGE 4** | Full-text analysis against EX1–EX10 (including EX10 keyword pre-screening) | LF, GV |
 | **STAGE 5** | Forward and backward snowballing + full-text analysis of candidates | LF, GV, LP |
 | **Study Quality Assessment** | Assessment of the quality of each included primary study | LF, GV, FC |
-| **Data Extraction** | Extraction of the 42 parameters from the 19 included primary studies | LF, GV, LP |
+| **Data Extraction** | Extraction of the 44 parameters from the 19 included primary studies | LF, GV, LP |
 | **Data Synthesis** | Aggregation, classification, and narrative synthesis of the extracted data | LF, GV, FC, LP, TDM |
 
 ## References
