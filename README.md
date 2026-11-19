@@ -6,7 +6,7 @@ This repository contains all the documentation and supporting materials related 
 
 > **"Virtualization for Microcontroller-based Mixed-Criticality Systems: A Systematic Literature Review."**
 
-The SLR investigates how virtualization is implemented and managed in microcontroller-based mixed-criticality systems, covering the period 2015–January 2026. It follows the Kitchenham guidelines for systematic literature reviews in software engineering and identifies **19 primary studies** from an initial pool of **10,678 research articles** retrieved across five digital libraries.
+The SLR investigates how virtualization is implemented and managed in microcontroller-based mixed-criticality systems, covering the period 2015–August 2025. It follows the Kitchenham guidelines for systematic literature reviews in software engineering and identifies **19 primary studies** from an initial pool of **10,678 research articles** retrieved across five digital libraries.
 
 The repository is organized to ensure **transparency**, **reliability**, and **replicability** of the review process.
 
@@ -101,7 +101,7 @@ The data extraction form comprises **44 parameters** organized into **6 colour-c
 
 ## Data Sources
 
-The search was conducted in **August 2025** across the following digital libraries:
+The search was conducted in **July and August 2025** across the following digital libraries:
 
 - ACM Digital Library
 - IEEE Xplore
@@ -188,7 +188,7 @@ The string was adapted to the syntax of each digital library; the exact queries 
 
 ### Digital Resources
 
-The following bibliographic databases were searched in August 2025:
+The following bibliographic databases were searched between July and August 2025:
 
 1. Scopus — <https://www.scopus.com>
 2. ACM Digital Library — <https://dl.acm.org>
@@ -207,13 +207,13 @@ Forward and backward snowballing, as recommended by Wohlin's guidelines, were pe
 - **Backward snowballing** — inspection of the reference lists of each seed paper, to identify relevant older papers cited by the seeds.
 - **Forward snowballing** — inspection of the papers citing each seed (via Google Scholar, Scopus, IEEE Xplore, Web of Science), to identify relevant newer papers that cite the seeds.
 
-The snowballing process, performed in January 2026, produced 838 raw candidates (670 unique titles after deduplication), from which 8 additional primary studies were identified. Details are reported in `02_Study_Selection/STAGE5/README.md`.
+The snowballing process, performed in January 2026 and applying the same publication window (2015–August 2025), produced 838 raw candidates (670 unique titles after deduplication), from which 8 additional primary studies were identified. Details are reported in `02_Study_Selection/STAGE5/README.md`.
 
 ## Inclusion Factors
 
 | Code | Description |
 |------|-------------|
-| **IN1** | Research articles published between 2015 and January 2026 |
+| **IN1** | Research articles published between 2015 and August 2025 |
 | **IN2** |  Research articles published in peer-reviewed journals and conference proceedings |
 | **IN3** | Research articles presenting primary studies (i.e., original empirical research reporting first-hand data |
 | **IN4** |  Research articles with full text available (i.e., not limited to title and abstract) |
@@ -225,7 +225,7 @@ The snowballing process, performed in January 2026, produced 838 raw candidates 
 
 | Code | Description |
 |------|-------------|
-| **EX1** |Research articles published before 2015 or after January 2026 |
+| **EX1** |Research articles published before 2015 or after August 2025 |
 | **EX2** | Research articles of the following types: secondary studies (e.g., surveys, reviews, systematic literature reviews, systematizations of knowledge), tutorials, editorials, dissertations, technical reports, posters, and non-peer-reviewed articles.|
 | **EX3** | Not written in English |
 | **EX4** | Research articles whose full text is neither available nor obtainable after a request to the authors. |
