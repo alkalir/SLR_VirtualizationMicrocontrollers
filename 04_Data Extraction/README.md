@@ -1,4 +1,4 @@
-# 04_Data Extraction — Data Extraction Form and Extracted Data
+# 04_Data Extraction — Data Extraction Form, Extracted Data and Quality Assessment
 
 **Input**: 19 primary studies (the final set produced by STAGE 5)
 **Output**: Completed data-extraction table with **44 parameters × 19 papers**
@@ -22,6 +22,7 @@ The extraction protocol and the taxonomy used to classify the answers are docume
 |------|-------------|
 | `Data_Extraction_Form.xlsx` | Template defining all 44 extraction parameters, organised in 6 colour-coded groups with the associated Research Question (sheet `Data Extraction Form`), plus a sheet `Allowed Values` with the description and the admitted values of each parameter. Each column is a parameter, each group is a coloured header spanning several columns. |
 | `Extracted_Data.xlsx` | Completed data-extraction table — **one row per primary study (19 rows), one column per parameter (44 columns)**. The first three header rows reproduce the colour-coded group structure of the form. A second sheet, `Legend`, explains the abbreviations and symbols used in the cells (`n.r.` = not reported, `—` = not applicable/not evaluated, `●` = evaluated). |
+| `Quality_Assessment.xlsx` | Qualitative quality assessment of the 19 primary studies against the four criteria QA1–QA4 (✓ satisfied / — not satisfied), with the per-criterion totals. A second sheet, `Criteria`, defines QA1–QA4. The assessment supports the interpretation of the RQ5 findings and is not used to exclude studies. |
 
 ## Extraction Parameters
 

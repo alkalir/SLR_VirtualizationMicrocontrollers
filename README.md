@@ -43,10 +43,11 @@ SLR_Database/
 ├── 03_Included_PaPers/                    # Full-text PDFs of the 19 included primary studies
 │   └── README.md
 │
-└── 04_Data Extraction/                    # Data extraction form and completed extraction
+└── 04_Data Extraction/                    # Data extraction form, completed extraction, quality assessment
     ├── README.md
     ├── Data_Extraction_Form.xlsx
-    └── Extracted_Data.xlsx
+    ├── Extracted_Data.xlsx
+    └── Quality_Assessment.xlsx
 ```
 
 Each subfolder contains its own `README.md` with a detailed description of the content and of the activities performed at that stage of the review.
@@ -250,15 +251,14 @@ Data extraction was performed **independently by two reviewers** (Leonardo Fazzi
 
 ## Study Quality Assessment
 
-Following Kitchenham's guidelines, the main quality criterion adopted is the **availability of a concrete implementation and evaluation** of the proposed virtualization mechanism. This requirement is embedded in the inclusion/exclusion criteria themselves — specifically in IN1 (proposes or evaluates a virtualization solution) and in EX8 (does not address virtualization). Papers surviving STAGE 4 (full-text analysis) are considered to have met this minimum-quality bar.
+All included research articles are peer-reviewed (IN2), so the quality assessment is **qualitative**: it supports the interpretation of the findings and is **not used to exclude** research articles. Each of the 19 primary studies was examined against four criteria, each marked as satisfied (✓) or not satisfied (—):
 
-In addition, for each included primary study the reviewers recorded whether:
+- **QA1** — clarity of the description of the virtualization solution;
+- **QA2** — experimental validation of a prototype on real HW or FPGA;
+- **QA3** — transparency of the performance evaluation, i.e., metrics, baseline, experimental setup, number of repetitions, and worst-case or dispersion values;
+- **QA4** — explicit discussion of limitations and assumptions.
 
-- the paper clearly identifies the hardware platform and protection mechanisms used;
-- the paper reports quantitative performance measurements (overheads, latencies, memory footprint);
-- the paper provides a reproducible description of the isolation and scheduling strategies.
-
-These quality indicators are reflected in the extracted data and are used in the discussion of results to weight the contribution of each primary study.
+The outcome for each study is reported in `04_Data Extraction/Quality_Assessment.xlsx`. Overall, 18 of the 19 studies satisfy QA1, 18 satisfy QA2 (validation on real HW or FPGA), 11 satisfy QA3 (fully documented performance evaluation), and 16 satisfy QA4. This heterogeneity is taken into account in the interpretation of the RQ5 findings.
 
 ## Data Synthesis
 
