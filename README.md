@@ -72,14 +72,14 @@ The study selection followed a five-stage filtering procedure:
 
 The SLR addresses the following overall research question:
 
-> **How is virtualization implemented and managed in microcontroller-based mixed-criticality systems?**
+> **How is virtualization implemented and managed in MCU-based mixed-criticality systems?**
 
 This is decomposed into five specific research questions:
 
-- **RQ1**: What virtualization solutions have been proposed and how do they differ across virtualization dimensions?
-- **RQ2**: What hardware platforms are targeted and which architectural features enable or constrain virtualization?
-- **RQ3**: How are memory partitioning, trap handling, and I/O virtualization implemented?
-- **RQ4**: How is virtualization configured and managed across the system life cycle?
+- **RQ1**: How do virtualization solutions differ across virtualization dimensions?
+- **RQ2**: What hardware platforms are targeted?
+- **RQ3**: How is virtualization implemented across memory, processor, and I/O?
+- **RQ4**: How is virtualization managed across the system life cycle?
 - **RQ5**: What is the impact of virtualization in terms of performance?
 
 ---
@@ -159,15 +159,15 @@ Review protocol for **Virtualization for Microcontroller-based Mixed-Criticality
 
 **Full Review Question**
 
-> How is virtualization implemented and managed in microcontroller-based mixed-criticality systems?
+> How is virtualization implemented and managed in MCU-based mixed-criticality systems?
 
 This overall question is decomposed into five specific research questions:
 
-- **RQ1** — What are the characteristics of virtualization solutions proposed for microcontroller-based mixed-criticality systems?
-- **RQ2** — On which hardware platforms are these solutions implemented and evaluated?
-- **RQ3** — How is isolation between partitions enforced (memory, traps/interrupts, I/O)?
-- **RQ4** — How is the life-cycle of a partition managed (boot, creation, scheduling, communication)?
-- **RQ5** — What is the impact of the proposed virtualization solution on system performance?
+- **RQ1** — How do virtualization solutions differ across virtualization dimensions?
+- **RQ2** — What hardware platforms are targeted?
+- **RQ3** — How is virtualization implemented across memory, processor, and I/O?
+- **RQ4** — How is virtualization managed across the system life cycle?
+- **RQ5** — What is the impact of virtualization in terms of performance?
 
 ## Search Strategy
 

@@ -8,11 +8,11 @@
 
 After the study selection process (STAGE 1 → STAGE 5) has produced the final set of **19 primary studies**, each of them is read in full and a fixed set of **44 data-extraction parameters** is filled in. The parameters are organised into **6 thematic groups**, each colour-coded in the spreadsheets and each addressing one or more of the Research Questions of the SLR:
 
-- **RQ1** — What are the characteristics of virtualization solutions proposed for microcontroller-based mixed-criticality systems?
-- **RQ2** — On which hardware platforms are these solutions implemented and evaluated?
-- **RQ3** — How is isolation between partitions enforced (memory, traps/interrupts, I/O)?
-- **RQ4** — How is the life-cycle of a partition managed (boot, creation, scheduling, communication)?
-- **RQ5** — What is the impact of the proposed virtualization solution on system performance?
+- **RQ1** — How do virtualization solutions differ across virtualization dimensions?
+- **RQ2** — What hardware platforms are targeted?
+- **RQ3** — How is virtualization implemented across memory, processor, and I/O?
+- **RQ4** — How is virtualization managed across the system life cycle?
+- **RQ5** — What is the impact of virtualization in terms of performance?
 
 The extraction protocol and the taxonomy used to classify the answers are documented in the SR Protocol section of the main `../README.md`, in particular under *Data Extraction* and *Data Synthesis*.
 
